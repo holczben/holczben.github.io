@@ -1,0 +1,43 @@
+html{
+    box-sizing: inherit;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(300deg, #8414e7, #1bee57,#63c9b4);
+    padding-top: 150px;
+
+}
+
+.kijelzo{
+    width: 280px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 16px;
+}
+
+.kijel{
+    padding: 20px;
+}
+
+button{
+   border-radius: 16px;
+   font-family: inherit;
+   font-size: 30px;
+   height: 70px;
+   width: 70px;
+}
+
+.plusgomb{
+    height: 70px;
+    width: 70px;
+}
+li{
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.30);
+    border-radius: 40px;
+}
+

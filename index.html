@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Számológép</title>
+</head>
+<body id="body">
+
+    <div align="center" class="plusgomb">
+        <button onclick="korkerulet()">◦</button class="gomb">
+        <button onclick="korterulet()">●</button class="gomb">
+        <button onclick="atlo()">☒</button class="gomb">
+        <button onclick="gula()">GT</button class="gomb">
+        <button onclick="elozmeny()">◴</button class="gomb">
+        
+    </div>
+    <div align="center" id="kijel" class="kijel">
+        <input type="text" onclick="kijelzo()" class="kijelzo"id="kijelzo" placeholder="0">
+    </div>
+    
+    <div align="center">
+        <button onclick="szam('1')">1</button class="gomb">
+        <button onclick="szam('2')">2</button class="gomb" >
+        <button onclick="szam('3')">3</button class="gomb" >
+        <button onclick="szam('+')">+</button class="gomb" >
+    </div>
+    <div align="center">
+        <button onclick="szam('4')">4</button class="gomb">
+        <button onclick="szam('5')">5</button class="gomb">
+        <button onclick="szam('6')">6</button class="gomb">
+        <button onclick="szam('-')">-</button class="gomb">
+    </div>
+    <div align="center">
+        <button onclick="szam('7')">7</button class="gomb">
+        <button onclick="szam('8')">8</button class="gomb">
+        <button onclick="szam('9')">9</button class="gomb">
+        <button onclick="szam('*')">*</button class="gomb">
+    </div>
+    <div align="center">
+        <button onclick="szam('0')">0</button class="gomb">
+        <button onclick="szam('.')">.</button class="gomb">
+        <button onclick="pi(100000000)">π</button class="gomb">
+        <button onclick="szam('/')">÷</button class="gomb">
+    </div>
+    <div align="center">
+        <button onclick="egyenlo()">=</button class="gomb">
+        <button onclick="torol()">C</button class="gomb">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
