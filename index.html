@@ -2,54 +2,147 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/fav.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Számológép</title>
+    <title>HolczerBalázs.ev</title>
 </head>
-<body id="body">
-
-    <div align="center" class="plusgomb">
-        <button onclick="korkerulet()">◦</button class="gomb">
-        <button onclick="korterulet()">●</button class="gomb">
-        <button onclick="atlo()">☒</button class="gomb">
-        <button onclick="gula()">GT</button class="gomb">
-        <button onclick="elozmeny()">◴</button class="gomb">
+<body>
+    <header>
+        <nav>
+            <a href="javascript:void(0);" id="hamburgericon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul>
+                <li class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
+                <a href=""><li>Rólunk</li></a>
+                <a href=""><li>Szolgáltatások</li></a>
+                <a href=""><li style="padding-right: 38px;">Ajánlatkérés</li></a>
+                <a href="" style="height: 30px; align-self: center;"><li class="contact">Kapcsolat</li></a>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <ul id="hamburgermenu">
+                <a href=""><li>Rólunk</li></a>
+                <a href=""><li>Szolgáltatások</li></a>
+                <a href=""><li>Ajánlatkérés</li></a>
+                <a href=""><li style="color: rgb(241, 7, 7);">Kapcsolat</li></a>
+            </ul>
+        </div>
+        <div class="hero-content">
+            <h1>HolczerBalazs.ev</h1>
+            <p>Szakértelem és precizitás minden részletben, hogy tervei erős alapokon valósuljanak meg.</p>
+            <button>Tudj meg többet</button>
+        </div>
+    </header>
+   <section class="introduction container">
+        <h1>Bemutatkozás</h1>
+        <p>
+            Üdvözöljük cégünknél, ahol a tartósság és precizitás találkozik! Több tíz tapasztalattal az
+            építőipari és ipari fémszerkezetek gyártásában és szerelésében kínálunk magas színvonalú,
+            ügyfélközpontú megoldásokat. Legyen szó acélszerkezetekről, lépcsőkről, korlátokról vagy
+            egyedi fémelemekről, csapatunk minden projektet a minőség és pontosság jegyében valósít meg.
+            Velünk az elképzelései erős alapokra kerülnek – kérjen árajánlatot még ma!
+        </p>
+        <button>Tudj meg többet</button>
+   </section>
+   <section class="whyUs container">
+        <div class="whyUsContent col">
+            <h1>Miért minket?</h1>
+            <p>Válasszon minket, ha megbízható, precíz és tapasztalt szakemberekkel szeretne dolgozni!</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i>Többéves tapasztalat</li>
+                <li><i class="fa-regular fa-circle-check"></i>Kiváló minőség</li>
+                <li><i class="fa-regular fa-circle-check"></i>Megbízhatóság</li>
+                <li><i class="fa-regular fa-circle-check"></i>Versenyképes árak</li>
+            </ul>
+        </div>
+        <div class="whyUsimg col d-lg-block d-none"></div>
         
-    </div>
-    <div align="center" id="kijel" class="kijel">
-        <input type="text" onclick="kijelzo()" class="kijelzo"id="kijelzo" placeholder="0">
-    </div>
-    
-    <div align="center">
-        <button onclick="szam('1')">1</button class="gomb">
-        <button onclick="szam('2')">2</button class="gomb" >
-        <button onclick="szam('3')">3</button class="gomb" >
-        <button onclick="szam('+')">+</button class="gomb" >
-    </div>
-    <div align="center">
-        <button onclick="szam('4')">4</button class="gomb">
-        <button onclick="szam('5')">5</button class="gomb">
-        <button onclick="szam('6')">6</button class="gomb">
-        <button onclick="szam('-')">-</button class="gomb">
-    </div>
-    <div align="center">
-        <button onclick="szam('7')">7</button class="gomb">
-        <button onclick="szam('8')">8</button class="gomb">
-        <button onclick="szam('9')">9</button class="gomb">
-        <button onclick="szam('*')">*</button class="gomb">
-    </div>
-    <div align="center">
-        <button onclick="szam('0')">0</button class="gomb">
-        <button onclick="szam('.')">.</button class="gomb">
-        <button onclick="pi(100000000)">π</button class="gomb">
-        <button onclick="szam('/')">÷</button class="gomb">
-    </div>
-    <div align="center">
-        <button onclick="egyenlo()">=</button class="gomb">
-        <button onclick="torol()">C</button class="gomb">
-    </div>
+   </section>
+   <section class="services container">
+    <div class="servicesimg col d-lg-block d-none"></div>
+        <div class="servicesContent col p-0 ps-lg-4" >
+            <h1>Szolgáltatások</h1>
+            <p>Legyen szó fémszerkezetek tervezéséről, gyártásáról vagy telepítéséről, szakértői csapatunk minden lépésben biztosítja a kiváló eredményeket.</p>
+            <h3>Lemez munkák</h3>
+            <p>Precíziós lemezek vágása, hajlítása és hegesztése ipari és építkezési projektekhez.</p>
+            <h3>Fém munkák</h3>
+            <p>Egyedi fémszerkezetek tervezése és kivitelezése, beleértve korlátokat, lépcsőket, kerítéseket és más fém alkatrészeket. </p>
+            <h3>Telepítés</h3>
+            <p>Szerkezeti elemek és fémszerkezetek helyszíni telepítése, beleértve a helyszíni hegesztést és összeszerelést. </p>
+            <button class="mx-md-0 mx-auto">Tudj meg többet</button>
+        </div>
+   </section>
+   <section class="introduction container">
+        <h1>Ajánlatkérés</h1>
+        <p>
+            Önnek is fontos a pontos, gyors és versenyképes árajánlat? Ne habozzon, kérjen tőlünk személyre 
+            szabott ajánlatot! Töltse ki az alábbi űrlapot, és ossza meg velünk projektje részleteit. 
+            Mi szakértőinkkel alaposan átvizsgáljuk a feladatot, és a legmegfelelőbb megoldást kínáljuk 
+            Önnek, figyelembe véve igényeit és költségvetését. Garantáljuk, hogy minden kérdése válaszra 
+            talál, és segítünk az elképzeléseit a legjobb minőségben megvalósítani! Kezdje el most, és tegye 
+            meg az első lépést a sikeres projekt felé!
+        </p>
+        <button>Tudj meg többet</button>
+   </section>
+   <footer>
+    <div class="columns">
+        <div class="column">
+            <h1>Navigáció</h1>
+            <div class="FooterContent">
+                <a href=""><p>Nyitólap</p></a>
+                <a href=""><p>Rólunk</p></a>
+                <a href=""><p>Szolgáltatások</p></a>
+                <a href=""><p>Ajánlatkérés</p></a>
+            </div>
+        </div>
+        <div class="column">
+            <h1>Kapcsolat</h1>
+            <div class="FooterContent">
+                <p>holczer81@gmail.com</p>
+                <p>+36204078616</p>
+                <p>9473 Egyházasfalu, Ady e. u. 13.</p>
+                <p>Nyitvatartás: 
+                    <div class="Open">
+                        <p>H-P: 7-17</p>
+                        <p>Sz-V: 8-12</p>
+                    </div>
+                </p>
 
-    <script src="main.js"></script>
+            </div>
+        </div>
+        <div class="column">
+            <h1>Partnereink</h1>
+            <div class="FooterContent">
+                <p>Határ Kocsma</p>
+                <p>Tetőbolt</p>
+                <p>Máriófém.kft</p>
+                <p>Grufem.kft</p>
+            </div>
+        </div>
+    </div>
+    <div class="CopyandIcons">
+        <div>
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.png" alt="instagram"></a>
+            <a href="https://x.com"><img src="images/x_logo.png" alt="x"></a>
+        </div>
+        <p>© 2025 HolczerBalázs.ev. Minden jog fenntartva.</p>
+    </div>
+   </footer>
+   <script src="https://kit.fontawesome.com/31c7a47358.js" crossorigin="anonymous"></script>
+   <script>
+        function hamburger() {
+            var menu = document.getElementById("hamburgermenu");
+            if (menu.style.display == "unset") {
+                menu.style.display = "";
+            }
+            else {
+                menu.style.display = "unset"
+            }
+        }
+   </script>
 </body>
 </html>

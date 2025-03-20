@@ -1,43 +1,614 @@
-html{
-    box-sizing: inherit;
-    height: 100%;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100..900&display=swap');
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    align-items: center;
-    background: linear-gradient(300deg, #8414e7, #1bee57,#63c9b4);
-    padding-top: 150px;
-
+html::-webkit-scrollbar {
+    display: none;
 }
 
-.kijelzo{
-    width: 280px;
-    height: 50px;
-    font-size: 30px;
-    border-radius: 16px;
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.kijel{
-    padding: 20px;
+body, html {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 button{
-   border-radius: 16px;
-   font-family: inherit;
-   font-size: 30px;
-   height: 70px;
-   width: 70px;
+    font-family: 'roboto';
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(241, 7, 7);
+    color: white;
 }
 
-.plusgomb{
-    height: 70px;
-    width: 70px;
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-li{
+
+p {
+    font-size: 20px;
+}
+
+/* Hero section dízájnja */
+  
+header{
+    background: url(images/nyito_hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    font-family: 'roboto';
+    font-size: 28px;
+}
+header a {
+    text-decoration: none;
+}
+
+#hamburgericon{
+    display: none;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    font-size: 18px;
+}
+
+ul{
     list-style-type: none;
-    background: rgba(255, 255, 255, 0.30);
-    border-radius: 40px;
+    display: inline-flex;
+    margin-right: 10%;
+    margin-bottom: 0px !important;
 }
 
+li{
+    height: 82px;
+    align-content: center;
+    padding-left: 7dvw;
+    color: white;
+    font-weight: 600;
+}
+
+.logo{
+    margin-top: 0;
+    position: absolute;
+    left: 10px;
+}
+
+.contact{
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: center;
+    height: 30px;
+    margin-left: 3vw;
+    padding-left: 1.2dvh;
+    padding-right: 1.2dvh;
+    background-color: rgb(241, 7, 7);
+    color: black;
+    border-radius: 25px;
+}
+
+nav .logo img{
+    width: 82px;
+    max-width: 125px;
+}
+
+.hero-content{
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.hero-content h1{
+    color: rgb(241, 7, 7);
+    font-size: clamp(45px, 4.16dvw, 60px);
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+
+.hero-content p{
+    color: rgb(241, 7, 7);
+    width: 40vw;
+    font-size: clamp(15px, 1.38dvw, 20px);
+    color: white;
+    font-weight: 200;
+    padding-bottom: 35px;
+}
+
+.hero-content button{
+    width: 190px;
+    min-width: clamp(150px, 10.1dvw, 189px);
+    height: 50px;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.hamburger  {
+    display: none;
+}
+
+/* Bemutatkozás dízájnja */
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.introduction h1{
+    font-family: 'roboto';
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.introduction p{
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1000px;
+    padding: 50px;
+}
+
+.introduction button{
+    border-radius: 50px;
+    width: 470px;
+    height: 50px;
+}
+
+/* Miért minket dízájnja */
+
+.whyUs, .services{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.whyUsimg {
+    background-image: url(images/potkocsi.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.servicesimg{
+    background-image: url(images/hegesztő_munkás.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+.whyUsContent, .servicesContent{
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whyUsContent h1, .servicesContent h1{
+    font-family: 'roboto';
+    font-size: 48px;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-top: 10px;
+    margin-bottom: 2.92vh;
+}
+.whyUsContent p, .servicesContent p{
+    font-family: 'poppins';
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.fa-regular{
+    color:  rgb(241, 7, 7);
+    font-size: 40px;
+}
+
+.whyUs ul{
+    display: inline-flex;
+    margin-top: clamp(50px, 10.74vh,200px);
+    list-style: none;
+    color: black;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    list-style-position: inside;
+    gap: 4.88vh;
+}
+
+.whyUs li{
+    color: black;
+    font-family: 'roboto';
+    font-size: clamp(32px, 2.2vw, 40px);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.whyUs i{
+    padding-right: 50px;
+}
+
+.servicesContent{
+    padding-left: 30px;
+}
+
+.servicesContent h3{
+    font-family: 'roboto';
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 89px;
+    padding-top: 60px;
+}
+
+.servicesContent button{
+    border-radius: 18px;
+    width: 190px;
+    height: 50px;
+    margin-left: clamp(400px,20vw,422px) !important;
+}
+
+footer{
+    background-color: rgb(23, 23, 23);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: -30px;
+}
+
+.column {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.column a {
+    text-decoration: none;
+    color: white;
+}
+
+.column h1 {
+    margin-top: 0px;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: clamp(35px, 3.17vw, 48px);
+}
+
+.column a:hover{
+    color: rgb(241, 7, 7);
+}
+
+.FooterContent {
+    text-align: left;
+    font-weight: 200;
+    font-size: clamp(10px, 1.39dvw, 20px);
+}
+
+.FooterContent p{
+    margin-bottom: 0px;
+}
+
+.CopyandIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.CopyandIcons p {
+    margin-left: auto;
+    margin-right: 10px;
+    font-weight: 100;
+    font-size: clamp(10px, 1.39dvw, 20px);
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+.Open {
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hamburger li {
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 10px;
+        padding-right: 10px;
+    }
+
+    #hamburgermenu{
+        display: none;
+    }
+
+    #hamburgericon{
+        display: unset;
+        font-size: 50px;
+        color: white;
+        margin-right: 10px;
+    }
+
+    nav ul {
+        position: absolute;
+        left: 0px;
+        padding: 0;
+    }
+
+    nav li {
+        display: none;
+        padding: 0;
+    }
+
+    .logo {
+        display: block;
+        margin-top: 0px;
+        position: relative;
+        padding: 0;
+    }
+
+    header {
+        background-position: 80% center;
+    }
+
+    .hero-content{
+        display: flex;
+        flex-direction: column;   
+        align-items: center;   
+        text-align: center;        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+        font-weight: 600;
+        padding: 0px;
+    }
+
+    .hero-content p{
+        width: 80vw;
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .introduction{
+        align-items: center;
+    }
+    
+    .introduction h1{
+        font-size: 6vw ;
+    }
+    
+    .introduction p{
+        text-align: justify;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        width: 80vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+    
+    .introduction button{
+        align-self: center;
+        width: 150px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .whyUs, .services {
+        height: unset;
+        margin-bottom: 30px;
+    }
+
+    .whyUsContent {
+        position: relative;
+        justify-content: center;
+    }
+
+    .whyUs img, .services img {
+        display: none;
+    }
+
+    .whyUs h1, .services h1{
+        font-size: 6vw;
+        margin-top: 20px;
+    }
+
+    .whyUs p{
+        font-size: clamp(12px, 3.58vw, 20px);
+        margin-top: 10px;
+        max-width: 80vw;
+    }
+
+    .fa-regular{
+        font-size: 40px;
+    }
+
+    .whyUs ul {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .whyUs li {
+        font-size: 5vw;
+    }
+
+    .servicesContent {
+        position: relative;
+        justify-content: center;
+    }
+
+    .services p{
+        font-size: clamp(12px, 3.58vw, 20px);
+        width: 90vw;
+    }
+
+    .services h3 {
+        font-size: 25px;
+        padding-left: 40px;
+    }
+
+    .services button {
+        height: 40px;
+        width: 150px;
+        font-size: 12px;
+        margin-left:0px !important;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+        font-size: 3.5dvw;
+        margin-bottom: 0;
+    }
+
+    .column h1 {
+        font-size: 32px;
+    }
+
+    .FooterContent {
+        text-align: center;
+    }
+
+    footer img {
+        width: 8dvw;
+        height: auto;
+    }
+
+    .column h1 {
+        margin-top: 20px;
+    }
+
+    .CopyandIcons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CopyandIcons p {
+        font-size: 2.8dvw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-height: 550px){
+    .hero-content{
+        margin-top: 10vh;
+    }
+
+    .hero-content p, .hero-content h1{
+        padding: 0;
+    }
+
+    .hero-content button{
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+/*@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    nav {
+        height: 100px;
+    }
+
+    .hamburger{
+        display: block;
+        font-size: 70px;
+        align-self: center;
+    }
+
+    li {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    header {
+        background-image: url(images/mobile_hero.jpg);
+        background-position: bottom;
+    }
+
+    .hero-content{
+       margin-left: 10vw;
+       margin-top: 0;
+       position: relative;
+       top: 8vw;
+    }
+
+    .hero-content h1{
+        color: rgb(241, 7, 7);
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 35px;
+    }
+
+    .hero-content p{
+        width: 60vw;
+    }
+
+    .introduction{
+        align-items: center;
+    }
+    
+    .introduction h1{
+        font-size: 4vw ;
+    }
+    
+    .introduction p{
+        text-align: justify;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    
+    .introduction button{
+        align-self: center;
+        width: 30vw;
+        font-size: 10px;
+        height: 30px;
+    }
+}
+*/
