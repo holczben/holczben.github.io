@@ -3,146 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/images/fav.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>HolczerBalázs.ev</title>
+    <title>Mariofem</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="javascript:void(0);" id="hamburgericon" onclick="hamburger()">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul>
-                <li class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></li>
-                <a href=""><li>Rólunk</li></a>
-                <a href=""><li>Szolgáltatások</li></a>
-                <a href=""><li style="padding-right: 38px;">Ajánlatkérés</li></a>
-                <a href="" style="height: 30px; align-self: center;"><li class="contact">Kapcsolat</li></a>
-            </ul>
-        </nav>
-        <div class="hamburger">
-            <ul id="hamburgermenu">
-                <a href=""><li>Rólunk</li></a>
-                <a href=""><li>Szolgáltatások</li></a>
-                <a href=""><li>Ajánlatkérés</li></a>
-                <a href=""><li style="color: rgb(241, 7, 7);">Kapcsolat</li></a>
-            </ul>
+    <div id="hero">
+        <div id="logoContain">
+            <div id="logo"></div>
+        </div>
+        <div id="nav">
+            <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <div id="links">
+                <a href="#bemutCont">Bemutatkozás</a>
+                <a href="#szolgCont">Szolgáltatások</a>
+                <a href="#referencia">Referenciák</a>
+                <div id="linkContain">
+                    <a href="#ajanlCont">Ajánlatkérés</a>
+                </div>
+            </div>
         </div>
         <div class="hero-content">
-            <h1>HolczerBalazs.ev</h1>
+            <h1>Máriófém.kft</h1>
             <p>Szakértelem és precizitás minden részletben, hogy tervei erős alapokon valósuljanak meg.</p>
             <button>Tudj meg többet</button>
         </div>
-    </header>
-   <section class="introduction container">
-        <h1>Bemutatkozás</h1>
-        <p>
-            Üdvözöljük cégünknél, ahol a tartósság és precizitás találkozik! Több tíz tapasztalattal az
-            építőipari és ipari fémszerkezetek gyártásában és szerelésében kínálunk magas színvonalú,
-            ügyfélközpontú megoldásokat. Legyen szó acélszerkezetekről, lépcsőkről, korlátokról vagy
-            egyedi fémelemekről, csapatunk minden projektet a minőség és pontosság jegyében valósít meg.
-            Velünk az elképzelései erős alapokra kerülnek – kérjen árajánlatot még ma!
-        </p>
-        <button>Tudj meg többet</button>
-   </section>
-   <section class="whyUs container">
-        <div class="whyUsContent col">
-            <h1>Miért minket?</h1>
-            <p>Válasszon minket, ha megbízható, precíz és tapasztalt szakemberekkel szeretne dolgozni!</p>
-            <ul>
-                <li><i class="fa-regular fa-circle-check"></i>Többéves tapasztalat</li>
-                <li><i class="fa-regular fa-circle-check"></i>Kiváló minőség</li>
-                <li><i class="fa-regular fa-circle-check"></i>Megbízhatóság</li>
-                <li><i class="fa-regular fa-circle-check"></i>Versenyképes árak</li>
-            </ul>
-        </div>
-        <div class="whyUsimg col d-lg-block d-none"></div>
-        
-   </section>
-   <section class="services container">
-    <div class="servicesimg col d-lg-block d-none"></div>
-        <div class="servicesContent col p-0 ps-lg-4" >
-            <h1>Szolgáltatások</h1>
-            <p>Legyen szó fémszerkezetek tervezéséről, gyártásáról vagy telepítéséről, szakértői csapatunk minden lépésben biztosítja a kiváló eredményeket.</p>
-            <h3>Lemez munkák</h3>
-            <p>Precíziós lemezek vágása, hajlítása és hegesztése ipari és építkezési projektekhez.</p>
-            <h3>Fém munkák</h3>
-            <p>Egyedi fémszerkezetek tervezése és kivitelezése, beleértve korlátokat, lépcsőket, kerítéseket és más fém alkatrészeket. </p>
-            <h3>Telepítés</h3>
-            <p>Szerkezeti elemek és fémszerkezetek helyszíni telepítése, beleértve a helyszíni hegesztést és összeszerelést. </p>
-            <button class="mx-md-0 mx-auto">Tudj meg többet</button>
-        </div>
-   </section>
-   <section class="introduction container">
-        <h1>Ajánlatkérés</h1>
-        <p>
-            Önnek is fontos a pontos, gyors és versenyképes árajánlat? Ne habozzon, kérjen tőlünk személyre 
-            szabott ajánlatot! Töltse ki az alábbi űrlapot, és ossza meg velünk projektje részleteit. 
-            Mi szakértőinkkel alaposan átvizsgáljuk a feladatot, és a legmegfelelőbb megoldást kínáljuk 
-            Önnek, figyelembe véve igényeit és költségvetését. Garantáljuk, hogy minden kérdése válaszra 
-            talál, és segítünk az elképzeléseit a legjobb minőségben megvalósítani! Kezdje el most, és tegye 
-            meg az első lépést a sikeres projekt felé!
-        </p>
-        <button>Tudj meg többet</button>
-   </section>
-   <footer>
-    <div class="columns">
-        <div class="column">
-            <h1>Navigáció</h1>
-            <div class="FooterContent">
-                <a href=""><p>Nyitólap</p></a>
-                <a href=""><p>Rólunk</p></a>
-                <a href=""><p>Szolgáltatások</p></a>
-                <a href=""><p>Ajánlatkérés</p></a>
+    </div>
+    <div class="container">
+
+        <div id="bemutCont">
+            <div id="bemut">
+                <h1>Bemutatkozás</h1>
+                <p>Üdvözöljük cégünknél, ahol a tartósság és precizitás találkozik! Több tíz tapasztalattal az építőipari és ipari fémszerkezetek gyártásában és szerelésében kínálunk magas színvonalú, ügyfélközpontú megoldásokat.
+                    <br><br>Legyen szó acélszerkezetekről, lépcsőkről, korlátokról vagy egyedi fémelemekről, csapatunk minden projektet a minőség és pontosság jegyében valósít meg. Velünk az elképzelései erős alapokra kerülnek – kérjen árajánlatot még ma!</p>
+                <p id="alairas">Csigó Márió</p>
+            </div>
+            <div id="bemutKep">
+                <div id="kep1"></div>
+                <div id="kep2"></div>
             </div>
         </div>
-        <div class="column">
-            <h1>Kapcsolat</h1>
-            <div class="FooterContent">
-                <p>holczer81@gmail.com</p>
-                <p>+36204078616</p>
-                <p>9473 Egyházasfalu, Ady e. u. 13.</p>
-                <p>Nyitvatartás: 
-                    <div class="Open">
-                        <p>H-P: 7-17</p>
-                        <p>Sz-V: 8-12</p>
+
+        <div id="szolgBack"></div>
+        <div id="szolgCont">
+            <h1>Szolgáltatások</h1>
+            <div id="szolg">
+                <div class="szolg">
+                    <div class="szolgkep" id="szolg1"></div>
+                    <p>vas-, acél- és fémszerkezetek gyártása, szerelése</p>
+                </div>
+                <div class="szolg">
+                    <div class="szolgkep" id="szolg2"></div>
+                    <p>lakatosipari munkák, szerkezeti lakatos munkák</p>
+                </div>
+                <div class="szolg">
+                    <div class="szolgkep" id="szolg3"></div>
+                    <p>lakatos munkák egyedi igények alapján</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="referencia">
+            <h1>Referenciák</h1>
+            <div id="referenciak">
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/480973895_1184789866773899_3427477661212649033_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/125301247_115185957067634_7598549884930284467_n-2.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481307575_1184791266773759_4248970196198317938_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481174224_1184791153440437_8467378817197362532_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/125301247_115185957067634_7598549884930284467_n-2.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481307575_1184791266773759_4248970196198317938_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481174224_1184791153440437_8467378817197362532_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/125301247_115185957067634_7598549884930284467_n-2.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481307575_1184791266773759_4248970196198317938_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481174224_1184791153440437_8467378817197362532_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/124986297_115185937067636_2845515827062263043_n.jpg" alt="">
+                </div>
+
+                <div class="ref">
+                    <img src="./images/481174224_1184791153440437_8467378817197362532_n.jpg" alt="">
+                </div>
+            </div>
+            <button id="refbtn">Még több referencia</button>
+        </div>
+
+        <div id="ajanlBack"></div>
+        <div id="ajanlCont">
+            <div id="ajanl">
+                <h2>Keress bizalommal!</h2>
+                <img src="./images/logo-removebg-preview.png" alt="logo">
+            </div>
+            <div id="ajanlform">
+                <h1>Ajánlatkérés</h1>
+                <form action="">
+                    <div class="form-row">
+                        <label for="nev">Név:</label>
+                        <input type="text" name="nev" id="nev" required>
                     </div>
-                </p>
+                    
+                    <div class="form-row">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="tel">Tel:</label>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="uzenet">Üzenet:</label>
+                        <textarea name="uzenet" id="uzenet" required></textarea>
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="kep">Kép:</label><br>
+                        <input type="file" id="kepek" name="kepek[]" accept="image/*" multiple style="border: none;">
+                    </div>
+
+                    <label id="tajekoztato" for="checkbox">
+                        Elolvastam és elfogadom az adatvédelmi tájékoztatót.
+                    </label>
+                    <input type="checkbox" name="checkbox" id="checkbox" required><br>
+                
+                    <button type="submit">Küldés</button>
+                </form>
 
             </div>
         </div>
-        <div class="column">
-            <h1>Partnereink</h1>
-            <div class="FooterContent">
-                <p>Határ Kocsma</p>
-                <p>Tetőbolt</p>
-                <p>Máriófém.kft</p>
-                <p>Grufem.kft</p>
+    </div>
+
+    <footer>
+        <div id="footerCont">
+            <h2>Máriófém.kft</h2>
+            <p>Ha minőségit és tartósat keres!</p>
+            <div class="footer-elem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg>
+                <p>+36 30 462 2844</p>
             </div>
+
+            <div class="footer-elem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                </svg>
+                <p>matt.hegeszt@gmail.com</p>
+            </div>
+
+            <div class="footer-elem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+                <p>9461, Lövő, Ady Endre utca 15/2</p>
+            </div>
+
+            <div class="footer-elem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                <p>facebook.com/mariofemkft</p>
+            </div>
+
         </div>
-    </div>
-    <div class="CopyandIcons">
-        <div>
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.png" alt="facebook"></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.png" alt="instagram"></a>
-            <a href="https://x.com"><img src="images/x_logo.png" alt="x"></a>
-        </div>
-        <p>© 2025 HolczerBalázs.ev. Minden jog fenntartva.</p>
-    </div>
-   </footer>
-   <script src="https://kit.fontawesome.com/31c7a47358.js" crossorigin="anonymous"></script>
-   <script>
-        function hamburger() {
-            var menu = document.getElementById("hamburgermenu");
-            if (menu.style.display == "unset") {
-                menu.style.display = "";
-            }
-            else {
-                menu.style.display = "unset"
-            }
-        }
-   </script>
+        <p id="jog">Minden jog fenntartva © 2025 mariofem.hu</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
