@@ -205,9 +205,10 @@ button {
 
 #szolgBack {
     position: absolute;
-    left: 0;
     overflow: hidden;
+    left: 0;
     width: 100%;
+    max-width: 100vw;
     height: 600px;
     z-index: -1;
     background-color: lightgray;
@@ -304,8 +305,8 @@ img {
 
 #ajanlBack {
     position: absolute;
-    left: 0;
     overflow: hidden;
+    left: 0;
     width: 100%;
     height: 800px;
     z-index: -1;
@@ -571,8 +572,9 @@ footer {
     /*Szolgáltatások*/
 
     #szolgBack {
-        height: 1300px;
-        width: 200%;
+        height: 1250px;
+        max-width: 100vw;
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
     }
 
     /*Referenciák*/
@@ -586,8 +588,9 @@ footer {
 
     /*Ajánlatkérés*/
     #ajanlBack {
-        width: 250%;
-        height: 1300px;
+        max-width: 100vw;
+        height: 1500px;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
     }
 
     #ajanlCont {
@@ -630,5 +633,4 @@ footer {
         margin-top: 20px;
         border-radius: 10px;
     }
-
 }
